@@ -9,5 +9,7 @@ div h1, h3 {
 }
 #musicSelect {
     margin-left: 20px;
-    margin-top: 25px;
+}
+audio {
+    margin-top: 20px;
 }

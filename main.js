@@ -1,14 +1,13 @@
 /**
  * Created by devin on 1/25/17.
  */
-var audio
 
 function changeSong(mtype) {
-    var audio = document.getElementById('audio');
-
-    $('audio').toggle()
-    audio = new Audio();
-    audio.src=mtype
+    var audio = document.getElementById('audio')
+    var source = document.getElementById('mySource')
+    source.src = mtype
+    $('audio').show()
+    audio.load()
     audio.play()
 }
 
