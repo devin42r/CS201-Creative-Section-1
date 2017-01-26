@@ -10,10 +10,14 @@ div h1, h3 {
 }
 #musicSelect {
     margin-left: 20px;
+	display:inline-block;
 }
 audio {
-    margin-top: 20px;
-    margin-left: 20px;
+    margin-left: 10px;
+}
+
+audio:hover {
+	cursor: pointer;
 }
 
 h2{
