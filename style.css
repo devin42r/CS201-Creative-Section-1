@@ -1,0 +1,14 @@
+body {
+    background-image: url("headphones.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+div h1, h3 {
+    color: white;
+    margin-left: 20px;
+}
+#musicSelect {
+    position: absolute;
+    margin-left: 20px;
+    margin-top: 250px;
+}
