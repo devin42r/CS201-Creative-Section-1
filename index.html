@@ -12,26 +12,25 @@
             <h1>Music Sampler</h1>
         </div>
         <div id="musicSelect">
-            <h3>Pick a Tune:</h3>
             <div class="dropdown">
                 <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Dropdown button
+                    Pick a Tune:
                 </button>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" href="#">Jazz</a>
-                    <a class="dropdown-item" href="#">Hip-hop</a>
-                    <a class="dropdown-item" href="#">Country</a>
+                    <a class="dropdown-item" onclick="changeSong('mp3/Conscious_Waves_-_Motionless.mp3')">Jazz</a>
+                    <a class="dropdown-item" onclick="changeSong('mp3/Golden_Duck_Orchestra_-_ON_SALE.mp3')">Hip-hop</a>
+                    <a class="dropdown-item" onclick="changeSong('mp3/jazz.mp3')">Country</a>
                 </div>
             </div>
         </div>
-        <audio controls>
-            <source src="mp3/Conscious_Waves_-_Motionless.mp3" type="audio/mp3">
-            Your browser does not support the audio element.
+        <source controls>
+            <source id="mySource" src="" type="audio/mp3">
         </audio>
-        <audio controls>
-            <source src="mp3/jazz.mp3" type="audio/mp3">
-        </audio>
+        <!--<audio controls>-->
+            <!--<source src="mp3/jazz.mp3" type="audio/mp3">-->
+        <!--</audio>-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="main.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     </body>
 </html>
