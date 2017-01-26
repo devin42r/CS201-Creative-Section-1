@@ -2,23 +2,23 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Musicians</title>
+        <title>StudiOnline</title>
         <link rel="stylesheet" type="text/css" href="style.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
     </head>
     <body>
         <div>
-            <h1>Music Sampler</h1>
+            <h1>StudiOnline</h1>
         </div>
         <div id="musicSelect">
             <div class="dropdown">
                 <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Pick a Tune:
+                    Pick a Track:
                 </button>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" onclick="changeSong('mp3/Conscious_Waves_-_Motionless.mp3')">Jazz</a>
-                    <a class="dropdown-item" onclick="changeSong('mp3/Golden_Duck_Orchestra_-_ON_SALE.mp3')">Hip-hop</a>
+                    <a class="dropdown-item" onclick="changeSong('mp3/Conscious_Waves_-_Motionless.mp3')">Hip-hop</a>
+                    <a class="dropdown-item" onclick="changeSong('mp3/Golden_Duck_Orchestra_-_ON_SALE.mp3')">Rock</a>
                     <a class="dropdown-item" onclick="changeSong('mp3/jazz.mp3')">Country</a>
                 </div>
             </div>
@@ -29,7 +29,127 @@
         <!--<audio controls>-->
             <!--<source src="mp3/jazz.mp3" type="audio/mp3">-->
         <!--</audio>-->
-        <div>Am I Live?</div>
+
+        <h2>Click the piano keys or use the keyboard to play the piano!</h2>
+        <div id="pianoContainer">
+            <img id="piano" src="piano.png"/>
+
+            <div id="c1" class="whiteKey" onclick="playNote(this.id)"></div>
+            <div id="d1" class="whiteKey" onclick="playNote(this.id)"></div>
+            <div id="e1" class="whiteKey" onclick="playNote(this.id)"></div>
+            <div id="f1" class="whiteKey" onclick="playNote(this.id)"></div>
+            <div id="g1" class="whiteKey" onclick="playNote(this.id)"></div>
+            <div id="a1" class="whiteKey" onclick="playNote(this.id)"></div>
+            <div id="b1" class="whiteKey" onclick="playNote(this.id)"></div>
+            <div id="c2" class="whiteKey" onclick="playNote(this.id)"></div>
+            <div id="d2" class="whiteKey" onclick="playNote(this.id)"></div>
+            <div id="e2" class="whiteKey" onclick="playNote(this.id)"></div>
+            <div id="f2" class="whiteKey" onclick="playNote(this.id)"></div>
+            <div id="g2" class="whiteKey" onclick="playNote(this.id)"></div>
+            <div id="a2" class="whiteKey" onclick="playNote(this.id)"></div>
+            <div id="b2" class="whiteKey" onclick="playNote(this.id)"></div>
+            <div id="c3" class="whiteKey" onclick="playNote(this.id)"></div>
+
+            <div id="dFlat1" class="blackKey" onclick="playNote(this.id)"></div>
+            <div id="eFlat1" class="blackKey" onclick="playNote(this.id)"></div>
+            <div id="gFlat1" class="blackKey" onclick="playNote(this.id)"></div>
+            <div id="aFlat1" class="blackKey" onclick="playNote(this.id)"></div>
+            <div id="bFlat1" class="blackKey" onclick="playNote(this.id)"></div>
+            <div id="dFlat2" class="blackKey" onclick="playNote(this.id)"></div>
+            <div id="eFlat2" class="blackKey" onclick="playNote(this.id)"></div>
+            <div id="gFlat2" class="blackKey" onclick="playNote(this.id)"></div>
+            <div id="aFlat2" class="blackKey" onclick="playNote(this.id)"></div>
+            <div id="bFlat2" class="blackKey" onclick="playNote(this.id)"></div>
+
+        </div>
+
+        <table>
+          <tr>
+            <th colspan="8">Note => Key</th>
+          </tr>
+          <tr>
+            <td>C-1</td>
+            <td>Q</td>
+            <td>D-Flat-1</td>
+            <td>W</td>
+          </tr>
+          <tr>
+            <td>D-1</td>
+            <td>E</td>
+            <td>E-Flat-1</td>
+            <td>R</td>
+          </tr>
+          <tr>
+            <td>E-1</td>
+            <td>T</td>
+            <td>F-1</td>
+            <td>Y</td>
+          </tr>
+          <tr>
+            <td>G-Flat-1</td>
+            <td>U</td>
+            <td>G-1</td>
+            <td>I</td>
+          </tr>
+          <tr>
+            <td>A-Flat-1</td>
+            <td>O</td>
+            <td>A-1</td>
+            <td>P</td>
+          </tr>
+          <tr>
+            <td>B-Flat-1</td>
+            <td>A</td>
+            <td>B-1</td>
+            <td>S</td>
+          </tr>
+          <tr>
+            <td>C-2</td>
+            <td>D</td>
+            <td>D-Flat-2</td>
+            <td>F</td>
+          </tr>
+          <tr>
+            <td>D-2</td>
+            <td>G</td>
+            <td>E-Flat-2</td>
+            <td>H</td>
+          </tr>
+          <tr>
+            <td>E-2</td>
+            <td>J</td>
+            <td>F-2</td>
+            <td>Broken</td>
+          </tr>
+          <tr>
+            <td>G-Flat-2</td>
+            <td>L</td>
+            <td>G-2</td>
+            <td>Z</td>
+          </tr>
+          <tr>
+            <td>A-Flat-2</td>
+            <td>X</td>
+            <td>A-2</td>
+            <td>C</td>
+          </tr>
+          <tr>
+            <td>B-Flat-2</td>
+            <td>V</td>
+            <td>B-2</td>
+            <td>B</td>
+          </tr>
+          <tr>
+            <td>C-3</td>
+            <td>N</td>
+          </tr>
+        </table>
+
+
+        <audio id="note">
+            <source id="noteFile" src="" type="audio/mp3"/>
+        </audio>
+
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="main.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>

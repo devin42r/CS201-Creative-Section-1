@@ -2,6 +2,7 @@ body {
     background-image: url("headphones.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
+    width: 100%;
 }
 div h1, h3 {
     color: white;
@@ -12,4 +13,152 @@ div h1, h3 {
 }
 audio {
     margin-top: 20px;
+    margin-left: 20px;
+}
+
+h2{
+	text-align: center;
+	color: white !important;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 25%;
+    color: white;
+    margin-left: 15%;
+    font-weight: bold;
+}
+
+td, th {
+    border: 3px solid #dddddd;
+    padding: 0px !important;
+    text-align: center !important;
+}
+
+#pianoContainer{
+
+	width: 525px;
+	position: relative;
+	display: block;
+	margin-left: 45%;
+    margin-top: 50px;
+
+}
+
+#piano{
+	position: absolute;
+	width: 525px;
+}
+
+.whiteKey{
+	position: absolute;
+	width: 35px;
+	height: 175px;
+	display:inline-block;
+}
+
+#d1{
+	left: 35px;
+}
+
+#e1{
+	left: 70px;
+}
+
+#f1{
+	left: 105px;
+}
+
+#g1{
+	left: 140px;
+}
+
+#a1{
+	left: 175px;
+}
+
+#b1{
+	left: 210px;
+}
+
+#c2{
+	left: 245px;
+}
+
+#d2{
+	left: 280px;
+}
+
+#e2{
+	left: 313px;
+}
+
+#f2{
+	left: 348px;
+}
+
+#g2{
+	left: 383px;
+}
+
+#a2{
+	left: 418px;
+}
+
+#b2{
+	left: 453px;
+}
+
+#c3{
+	left: 488px;
+}
+
+.blackKey{
+
+	position: absolute;
+	width: 25px;
+	height: 110px;
+	display:inline-block;
+
+}
+
+#dFlat1{
+	left: 25px;
+}
+
+#eFlat1{
+	left: 60px;
+}
+
+#gFlat1{
+	left: 128px;
+}
+
+#aFlat1{
+	left: 163px;
+}
+
+#bFlat1{
+	left: 198px;
+}
+
+#dFlat2{
+	left: 266px;
+}
+
+#eFlat2{
+	left: 301px;
+}
+
+#gFlat2{
+	left: 369px;
+}
+
+#aFlat2{
+	left: 404px;
+}
+
+#bFlat2{
+	left: 440px;
 }
